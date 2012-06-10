@@ -4,7 +4,7 @@ PasteSH
 Você sempre quis um jeito fácil de copiar arquivos-texto entre servidores (remotos ou não) sem se preocupar em usar o clipboard (o que nem sempre é possível ou cômodo) ou um protocolo com o SCP? Acredita que por mais espetacular que seja o [Gist](https://gist.github.com/) as vezes você só queria algo mais simples? Pois seus problemas acabaram!
 ## Instalação
 
-Basta criar um banco de dados SQLite, importando o schema disponível no arquivo `pastesh.sql` e disponibilizar o arquivo `index.php` em qualquer servidor HTTP com suporte ao interpretador PHP. Em seguida, basta redirecionar a página de erro 404 do servidor para o mesmo (exemplo utilizável no `.htaccess` do [Apache](http://httpd.apache.org/)):
+Basta criar um banco de dados SQLite, importando o schema disponível no arquivo `pastesh.sql` e disponibilizar o arquivo `index.php` (alterando corretamente o caminho do arquivo referente ao banco de dados) em qualquer servidor HTTP com suporte ao interpretador PHP. Em seguida, basta redirecionar a página de erro 404 do servidor para o mesmo (exemplo utilizável no `.htaccess` do [Apache](http://httpd.apache.org/)):
 
     ErrorDocument 404 /index.php
 
