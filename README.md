@@ -18,7 +18,7 @@ Ou criar uma simples regra de rewrite (exemplo utilizável no [nginx](http://ngi
 
 Não há uma página com um formulário onde se possa enviar os arquivos, apenas para visualizá-los posteriormente. O processo de envio é realizado com alguma ferramenta de linha de comando que possa enviar comandos POST a um servidor, como o [cURL](http://curl.haxx.se/) (mude apenas o nome do arquivo e a URL, mas não o parâmetro "file"):
 
-    curl -F 'file=receita_de_bolo_de_fuba.txt' http://p.myhro.net/
+    curl -F 'file=<receita_de_bolo_de_fuba.txt' http://p.myhro.net/
 
 Este comando retorna o link único referente ao arquivo que foi enviado (ou um erro específico caso algo algo dê errado no processo).
 
