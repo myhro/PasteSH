@@ -50,7 +50,7 @@ else {
     // Caso contrário, seu conteúdo será exibido e o contador de visualizações será incrementado.
     else {
         echo $result['content'] . PHP_EOL;
-        $sqlcmd = "UPDATE files SET views = '" . ($result['views'] + 1) . "' WHERE id ='$id'";
+        $sqlcmd = "UPDATE files SET views = '" . ($result['views'] + 1) . "' WHERE hash ='$hash'";
         sqlite_exec($db, $sqlcmd);
     }
 }
